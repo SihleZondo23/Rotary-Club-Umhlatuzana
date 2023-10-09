@@ -1,28 +1,56 @@
-/* Reset some default styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body, h1, h2, p, ul, li, address {
     margin: 0;
     padding: 0;
 }
 
-/* Set a background color and text color */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
+    font-family: 'poppins', sans-serif;
+    background-color: #fffcfc;
     color: #333;
     line-height: 1.6;
     margin: 0;
     padding: 0;
 }
 
-/* Style the header */
 header {
-    background-color: #00ff15f1;
-    color: #fff;
+    background-image: url('main.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    flex-direction: column;
     text-align: center;
-    padding: 40px 0;
+    align-items: center;
+    height: 70vh;
+    padding: 60px 0;
+    text-align: right;
 }
 
-/* Navigation menu styles */
+header h1 {
+    align-items: center;
+    text-align: center;
+    margin-top: 300px;
+    font-weight: 500;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px 7%;
+}
+nav img {
+    height: 50px;
+}
+
 nav ul {
     list-style-type: none;
     text-align: center;
@@ -35,11 +63,11 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
     font-weight: bold;
+    font-size: 1rem;
 }
 
-/* About, Services, Volunteer, Donate, Contact sections */
 section {
     padding: 40px;
     background-color: #fff;
@@ -48,13 +76,11 @@ section {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Style links in sections */
 section a {
     color: #007BFF;
     text-decoration: none;
 }
 
-/* Footer styles */
 footer {
     background-color: #333;
     color: #fff;
@@ -62,7 +88,6 @@ footer {
     padding: 20px 0;
 }
 
-/* Responsive design - adjust margins on smaller screens */
 @media (max-width: 768px) {
     nav {
         flex-direction: row;
@@ -76,4 +101,36 @@ footer {
         display: block;
         margin: 10px 0;
     }
+}
+
+#services {
+    background-color: #f7f7f7;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.service {
+    display: inline-block;
+    text-align: left;
+    margin: 20px;
+    width: 30%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.service img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.service h3 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.service p {
+    font-size: 16px;
+    margin-top: 10px;
 }
