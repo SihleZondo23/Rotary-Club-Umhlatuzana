@@ -64,6 +64,9 @@ footer {
 
 /* Responsive design - adjust margins on smaller screens */
 @media (max-width: 768px) {
+    nav {
+        flex-direction: row;
+    }
     nav ul {
         text-align: center;
         padding-top: 20px;
