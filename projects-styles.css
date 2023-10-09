@@ -1,0 +1,71 @@
+html {
+    background-image: url('learners\ 1.jpg');
+}
+
+header {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+#services {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.service {
+    display: inline-block;
+    text-align: left;
+    margin: 20px;
+    width: 30%;
+    padding: 20px;
+    background-color: #ac581441;
+    border-radius: 11px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.service img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.service h3 {
+    width: auto;
+    font-size: 25px;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.service p {
+    color: rgb(250, 255, 255);
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #33333362;
+    color: #e26e10;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.icon {
+    color: chocolate;
+    margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+    section div {
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    section div h3 {
+        font-size: auto;
+        display: flex;
+        margin: 10px 0;
+        width: min-content;
+    }
+}
